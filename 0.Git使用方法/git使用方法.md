@@ -67,3 +67,29 @@ git push origin 远程仓库分支(branches) # 略写 git pull
 
 ![image-20230531092744814](E:\Test_Project_Github\0.Git使用方法\img\4.git_pull.png)
 
+
+
+## 常见错误：
+
+### 使用git push提交代码时，出现如下错误。
+
+```
+$ git push origin main
+To github.com:CaiNiao-Z/Test_Project_Github.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:CaiNiao-Z/Test_Project_Github.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+![image-20230531095436635](E:\Test_Project_Github\0.Git使用方法\img\6.git_error.png)
+
+**解决办法：**
+
+使用-f参数
+
+![image-20230531095722222](E:\Test_Project_Github\0.Git使用方法\img\6.git_solve.png)
+
