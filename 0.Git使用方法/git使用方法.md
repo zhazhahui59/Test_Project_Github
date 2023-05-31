@@ -18,11 +18,15 @@ git commit -m "提交说明"       	 # 提交说明
 git push origin main			# 将提交的内容推送到远端仓库 可以省略为git push
 ```
 
+![image-20230531093609093](E:\Test_Project_Github\0.Git使用方法\img\5.git.png)
+
 ## git代码拉取
 
 ```
 git pull origin main   			# 从远端仓库拉取文件到本地 可以省略为git pull
 ```
+
+![image-20230531093144738](E:\Test_Project_Github\0.Git使用方法\img\0.git_pull.png)
 
 ## git pull 部分文件无法获取时：
 
