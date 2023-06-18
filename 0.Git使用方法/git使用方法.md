@@ -6,7 +6,56 @@
 
 ## 与本地仓库建立关系：
 
-可以参考https://www.runoob.com/w3cnote/git-guide.html该教程，需要注意的是，要现在本地目录（准备存放github仓库文件的本地目录）中使用git init指令。不然的话在执行**git remote add origin git@github.com:yourName/yourRepo.git**指令链接远端仓库时会报如下错误：**fatal: not a git repository (or any of the parent directories): .git**
+可以参考 https://www.runoob.com/w3cnote/git-guide.html 该教程，需要注意的是，要现在本地目录（准备存放github仓库文件的本地目录）中使用git init指令。不然的话在执行**git remote add origin git@github.com:yourName/yourRepo.git**指令链接远端仓库时会报如下错误：**fatal: not a git repository (or any of the parent directories): .git**
+
+### 配置Git
+
+首先在本地创建`ssh key；`
+
+```
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+```
+
+后面的`your_email@youremail.com`改为你在github上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在`~/`下生成`.ssh`文件夹，进去，打开`id_rsa.pub`，复制里面的`key`。
+
+回到github上，进入 Account Settings（账户配置），左边选择SSH Keys，Add SSH Key,title随便填，粘贴在你电脑上生成的key。
+
+![image-20230618171640799](E:\GitProject\Test_Project_Github\0.Git使用方法\img\7.GitKey.png)
+
+为了验证是否成功，在git bash下输入：
+
+```
+$ ssh -T git@github.com
+```
+
+如果是第一次的会提示是否continue，输入yes就会看到：You've successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。
+
+接下来我们要做的就是把本地仓库传到github上去，在此之前还需要设置username和email，因为github每次commit都会记录他们。
+
+```
+$ git config --global user.name "your name"
+$ git config --global user.email "your_email@youremail.com"
+```
+
+进入要上传的仓库，右键git bash，
+
+初始化本地仓库：
+
+```
+$ git init
+```
+
+添加远程地址：
+
+```
+$ git remote add origin git@github.com:yourName/yourRepo.git
+```
+
+后面的yourName和yourRepo表示你再github的用户名和刚才新建的仓库，加完之后进入.git，打开config，这里会多出一个remote "origin"内容，这就是刚才添加的远程地址，也可以直接修改config来配置远程地址。
+
+创建新文件夹，打开，然后执行` git init` 以创建新的 git 仓库。检出仓库执行如下命令以创建一个本地仓库的克隆版本：`git clone /path/to/repository `
+
+如果是远端服务器上的仓库，你的命令会是这个样子：`git clone username@host:/path/to/repository`
 
 ## 常用指令操作：
 
