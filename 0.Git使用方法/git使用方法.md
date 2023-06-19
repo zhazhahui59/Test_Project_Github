@@ -20,7 +20,7 @@ $ ssh-keygen -t rsa -C "your_email@youremail.com"
 
 回到github上，进入 Account Settings（账户配置），左边选择SSH Keys，Add SSH Key,title随便填，粘贴在你电脑上生成的key。
 
-![image-20230618171640799](E:\GitProject\Test_Project_Github\0.Git使用方法\img\7.GitKey.png)
+![7.GitKey.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\7.GitKey.png)
 
 为了验证是否成功，在git bash下输入：
 
@@ -71,7 +71,7 @@ git commit -m "提交说明"       	 # 提交说明
 git push origin main			# 将提交的内容推送到远端仓库 可以省略为git push
 ```
 
-![image-20230531093609093](E:\GitProject\Test_Project_Github\0.Git使用方法\img\5.git.png)
+![5.git.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\5.git.png)
 
 ## git代码拉取
 
@@ -79,7 +79,7 @@ git push origin main			# 将提交的内容推送到远端仓库 可以省略为
 git pull origin main   			# 从远端仓库拉取文件到本地 可以省略为git pull
 ```
 
-![image-20230531093144738](E:\GitProject\Test_Project_Github\0.Git使用方法\img\0.git_pull.png)
+![0.git_pull.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\0.git_pull.png)
 
 ## git pull 部分文件无法获取时：
 
@@ -90,7 +90,7 @@ git pull origin main   			# 从远端仓库拉取文件到本地 可以省略为
 git checkout origin/master -- 文件/文件夹名称 (path/to/file)
 ```
 
-![image-20230531091013911](E:\GitProject\Test_Project_Github\0.Git使用方法\img\1.git_fetch.png)
+![1.git_fetch.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\1.git_fetch.png)
 
 ## git rm 删除远程仓库代码:
 
@@ -105,20 +105,20 @@ git rm -r -n --cached 文件/文件夹名称(path/to/file)
 git rm -r --cached 文件/文件夹名称(path/to/file)
 ```
 
-![image-20230531092406746](E:\GitProject\Test_Project_Github\0.Git使用方法\img\2.git_rm.png)
+![2.git_rm.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\2.git_rm.png)
 
 ```
 # 提交到本地并推送到远程服务器
 git commit -m "提交说明"
 ```
 
-![image-20230531092539563](E:\GitProject\Test_Project_Github\0.Git使用方法\img\3.git_commit.png)
+![3.git_commit.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\3.git_commit.png)
 
 ```
 git push origin 远程仓库分支(branches) # 略写 git pull
 ```
 
-![image-20230531092744814](E:\GitProject\Test_Project_Github\0.Git使用方法\img\4.git_pull.png)
+![4.git_pull.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\4.git_pull.png)
 
 
 
@@ -138,13 +138,13 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-![image-20230531095436635](E:\GitProject\Test_Project_Github\0.Git使用方法\img\6.git_error.png)
+![6.git_error.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\6.git_error.png)
 
 **解决办法：**
 
 使用-f参数
 
-![image-20230531095722222](E:\GitProject\Test_Project_Github\0.Git使用方法\img\6.git_solve.png)
+![6.git_solve.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\6.git_solve.png)
 
 ### 2.使用git add向缓存区提交文件时，出现如下警告。
 
