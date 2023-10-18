@@ -20,7 +20,7 @@ $ ssh-keygen -t rsa -C "your_email@youremail.com"
 
 回到github上，进入 Account Settings（账户配置），左边选择SSH Keys，Add SSH Key,title随便填，粘贴在你电脑上生成的key。
 
-![7.GitKey.png](main\0.Git使用方法\img\7.GitKey.png)
+![7.GitKey.png](https://github.com/CaiNiao-Z/Test_Project_Github/edit/main/0.Git使用方法/img/7.GitKey.png)
 
 为了验证是否成功，在git bash下输入：
 
