@@ -71,7 +71,7 @@ git commit -m "提交说明"       	 # 提交说明
 git push origin main			# 将提交的内容推送到远端仓库 可以省略为git push
 ```
 
-![5.git.png](E:\GitProject\Test_Project_Github\0.Git使用方法\img\5.git.png)
+![5.git.png](https://github.com/CaiNiao-Z/Test_Project_Github/blob/main/0.Git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/img/5.git.png)
 
 ## git代码拉取
 
